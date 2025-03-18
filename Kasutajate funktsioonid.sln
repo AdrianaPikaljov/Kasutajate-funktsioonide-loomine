@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35209.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Kasutajate funktsioonid", "Kasutajate funktsioonid.pyproj", "{8D5EB17B-EBC3-461E-8992-40E1F667951C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D5EB17B-EBC3-461E-8992-40E1F667951C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D5EB17B-EBC3-461E-8992-40E1F667951C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AF41D69B-C701-4DA5-A1A2-8DBE6344C480}
+	EndGlobalSection
+EndGlobal
