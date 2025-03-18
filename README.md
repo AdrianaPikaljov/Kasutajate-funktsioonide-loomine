@@ -1,0 +1,1 @@
+# Kasutajate funktsioonid
