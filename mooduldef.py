@@ -1,3 +1,6 @@
+
+
+
 def arithmetic(arv1: float, arv2: float, tehe: str)->any:
     """
     Lihne kalkulaator
@@ -57,3 +60,71 @@ def season(kuu:int)->str:
         vastus="suvi"
     elif kuu in [9,10,11]:
         vastus="sugis"
+    return vastus
+
+def is_prime(n:int)->bool:
+    '''
+    lihtarvud
+    :param int: Sisend kasutajalt
+    tagastab true kui arv on lihtarv ja false kui ei ole
+    :rtype: bool tagastab true kui arv on lihtarv ja false kui ei ole
+    '''
+
+    if n < 2:
+        return False  
+    for i in range(2, n):  
+        if n>1000:
+            exit()
+        if n % i == 0:
+            return False 
+        else:
+            return True
+
+
+def date (kuu:int, paev:int)->str:
+    '''
+    kuupaev
+    :param int kuu: Sisend kasutajalt, mingi arv
+    :param int paev: Sisend kasutajalt, mingi arv
+    tagastab kuupaev
+    :rtype: str tagastab kuupaev
+    '''
+    if kuu in [1,3,5,7,8,10,12]:
+        if paev in range(1,32):
+            vastus="kuupaev on oige"
+        else:
+            vastus="kuupaev on vale"
+    elif kuu in [4,6,9,11]:
+        if paev in range(1,31):
+            vastus="kuupaev on oige"
+        else:
+            vastus="kuupaev on vale"
+    elif kuu == 2:
+        if paev in range(1,29):
+            vastus="kuupaev on oige"
+    else:
+        vastus="kuupaev on vale"
+    return vastus
+
+def XOR_cipher(text:str, key:str)->str:
+    '''
+    XOR krüpteerimine
+    :param str text: Sisend kasutajalt, mingi tekst
+    :param str key: Sisend kasutajalt, mingi tekst
+    tagastab krüpteeritud teksti
+    :rtype: str tagastab krüpteeritud teksti
+    '''
+    encrypted = " "
+    for i in range(len(text)):
+        encrypted += chr(ord(text[i]) ^ ord(key[i % len(key)]))
+    return encrypted
+
+
+def bank(a: int, years: int)->int:
+    '''
+    :param a int: sisend kui palju raha
+    :param years int : sisend mitu aastat
+    :rtype: int tagastab kui palju raha on peale aastaid
+    '''
+    vastus = a * (1+0.1*years)
+    return vastus
